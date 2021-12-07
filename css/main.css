@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 100vh;
+  cursor: url("./dot.svg"), auto;
+}
+
+.title1 {
+  position: absolute;
+  top: 50vh;
+  left: 100px;
+  color: rgba(51, 51, 51, 0.241);
+}
+
+.title2 {
+  position: absolute;
+  top: calc(50vh+40px);
+  left: 100px;
+  color: rgba(51, 51, 51, 0.241);
+}
+
+.cursor {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(72, 72, 193, 0.421);
+  position: absolute;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.cursor .small-planet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: -5px;
+  right: 50%;
+}
+
+.on-click {
+  width: 80px;
+  height: 80px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
